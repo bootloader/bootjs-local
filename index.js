@@ -2,13 +2,11 @@
 const config = require('@bootloader/config');
 const ngrok = require("@ngrok/ngrok");
 const port = process.env.PORT || config.get("server.port");
-var prompt = require('prompt');
-const fs = require('fs');
 const nodemon = require("nodemon");
 
 const NGROK_URL = config.getIfPresent("NGROK_URL");
 const NGROK_TOKEN = config.get("ngrok.auth.token");
-console.log("ngrok.auth.token",NGROK_TOKEN);
+//console.log("ngrok.auth.token",NGROK_TOKEN);
 console.log("NGROK_URL",NGROK_URL);
 console.log("*************************");
 
